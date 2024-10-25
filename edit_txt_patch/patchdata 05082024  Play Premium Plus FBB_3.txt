@@ -1,0 +1,14 @@
+Contact RowID|Contact Status|Call Outcome|Call Attempt|Contact Comment|Update By|Upload Status|Error Message
+2407081210855|Success SMS||5||AUNJAIBOT||
+2407081216565|Success|Voice Aileen ไม่ตอบรับ - ลูกค้าไม่สนใจแพ็กเกจ|1||AUNJAIBOT||
+2407071161143|Unsuccess|System Conect|1||AUNJAIBOT||
+240723846593|Unsuccess|System Conect|1||AUNJAIBOT||
+2407071172662|Unsuccess|System Conect|4||AUNJAIBOT||
+2407081213840|Success SMS||5||AUNJAIBOT||
+2407093518570|Unsuccess|System Conect|4||AUNJAIBOT||
+2407081211601|Success SMS||5||AUNJAIBOT||
+2407081219302|Unsuccess|System Conect|4||AUNJAIBOT||
+2407093521231|Success SMS||5||AUNJAIBOT||
+2407093520387|Success SMS||5||AUNJAIBOT||
+2407093513747|Unsuccess|System Conect|2||AUNJAIBOT||
+2407071224888|Success SMS||5||AUNJAIBOT||

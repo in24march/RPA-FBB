@@ -1,0 +1,77 @@
+login wiiz
+
+ais acleen
+
+outbound > outbound all
+
+จับจาก Task Name and Creation time คือเหมือนเช็คจาก master file และ มีวันที่ตรงกับวันนี้รึป่าว
+
+เข้า task export > export 
+
+รอ element download เสร็จ มันจะอยู่อันแรกเสมอ เป็น new file file ให้ชื่อแคมเปน จะเป็น ชื่อเดียวกับ task เลย
+
+อาขจจะมีไทป์ให้ คือถ้ามันเป็นไทป์ FBB หรือ MOBILE ก็ต่อชื่อไฟล์ด้วยไทป์นั้น
+
+MAP 
+
+contact status == success Closure
+
+แบะเช็คว่าถ้าเป็น FBB or MOBi
+
+if FBB input fiber ไม่มีปัญหา
+
+elif mobile input contact num แต่จะไม่มี0 นำหน้า ต้องเพอ่มให้ด้วย
+
+file play premium
+
+และเอาเบอที่กรองแล้วไปใส่ ในไฟล์ play premium ใน column['mobile']
+column['Promotion Name'] เอาโปรโมชั่นในมาสเตอร์มาใส่ให้ตรงตาม  Task ที่ดึงมานะ ใส่เหมือนกันทั้งหมดนั่นแหละ 
+เช็คถ้ามีเบอเกิน ให้เพิ่มแถวตามเบอที่เกินไปด้วย
+
+
+
+promotion name and start date จะถูกเปลี่ยนแค่2 column 
+
+
+campang จะมี master ให้เช็ค
+
+
+แล้วจะให้ part นึง เพื่อให้ข้อมู,ของในไฟล์นั้นไปใส่
+
+
+------next file ส่งให้ P'command-----
+success sms คือโทรสแตมป์ไป5 รอบแล้ว กับ บอกไม่ต้องโทรมาอีก
+จัดการ attemp ที่เป็น 5 และ status เป็น unsuccess กับ blank ต้องเปลี่ยนเป็น Success SMS
+และfillter contact status ถ้าเป็น success sms ลบ out come topic ทั้งหมด
+
+unsus เปลี่ยน outcome topic เป็นคำที่กำหนด'System Conect' ฟังชั่นนี้ทำให้เปิดปิดง่ายๆ
+
+contact status == blank แปบวเป็น unsus
+
+-----------จากนั้นเตรียมไปใส่ใน patch data---------
+เปลี่ยนชื่อไฟล์ตามแคมเปน (ชื่อแคมเปน(Task name) {วันที่})
+
+col 1 <contact ID
+    2 <G
+    3 <AE
+    4 <AC
+    5 <F
+    G <
+
+contact status = sus , sus sms <mobile num
+
+------txt----------
+เซฟ เป็น csv utf-8 มาจากไฟล์ที่แล้ว โดยลบชีทออกให้หมดเหลือแค่ชีทแรก
+และเอา mobile num ออกด้วย
+
+และ TXT เปลีย่น , เป็น |  แค่นั้น
+
+
+
+
+
+
+
+10/04/2024
+	|_ patch data
+	|_ Text patch data
